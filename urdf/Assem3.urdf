@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.114267216289095 -0.283995565633609 0.418841558829499"
+        rpy="0 0 0" />
+      <mass
+        value="0.0443380674955201" />
+      <inertia
+        ixx="2.47610542503408E-05"
+        ixy="-7.37903869562366E-07"
+        ixz="-4.2010108745319E-07"
+        iyy="4.55860304537552E-05"
+        iyz="8.23627837309425E-06"
+        izz="2.82535428698047E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="6.53673087033235E-05 0.00250200481694549 0.00957549358005047"
+        rpy="0 0 0" />
+      <mass
+        value="0.0134089098796153" />
+      <inertia
+        ixx="1.88481379335116E-06"
+        ixy="1.96761178532424E-09"
+        ixz="6.21035254979903E-11"
+        iyy="1.08111559493938E-06"
+        iyz="-5.74155093962394E-09"
+        izz="1.59259136341131E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1"
+    type="fixed">
+    <origin
+      xyz="-0.0996674633817171 -0.425954017632799 -0.28265638337387"
+      rpy="-0.120428320228677 0.363056391223143 -1.99282412633333" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="-0.000717799918891593 0.0176239675175966 -1.63990428760918E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00317309646256028" />
+      <inertia
+        ixx="3.05421956369053E-07"
+        ixy="2.23820929079064E-08"
+        ixz="-8.04167096967374E-11"
+        iyy="5.85115905441417E-07"
+        iyz="5.04531842445188E-10"
+        izz="6.7286896243679E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2"
+    type="continuous">
+    <origin
+      xyz="0 0.00900000000007965 0.0140840111554042"
+      rpy="1.5707963267949 0 -0.806549251165967" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="6.53673084709538E-05 -0.00649799518314076 -0.000924506420035387"
+        rpy="0 0 0" />
+      <mass
+        value="0.0134089098796153" />
+      <inertia
+        ixx="1.88481379335115E-06"
+        ixy="1.96761178776277E-09"
+        ixz="6.21035255163868E-11"
+        iyy="1.08111559493939E-06"
+        iyz="-5.74155093962368E-09"
+        izz="1.59259136341131E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3"
+    type="continuous">
+    <origin
+      xyz="0 0.0274835289074877 -5.17952220170925E-05"
+      rpy="-1.57079632679485 -0.796048731037786 -1.57079632679488" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="-1.2521254080966E-05 0.0384758320993447 -0.0194046215866645"
+        rpy="0 0 0" />
+      <mass
+        value="0.00267682688700826" />
+      <inertia
+        ixx="1.84208978467806E-07"
+        ixy="-8.70543377439057E-12"
+        ixz="1.01848920288302E-12"
+        iyy="9.21692370673706E-08"
+        iyz="1.2209144849617E-08"
+        izz="2.70821050277172E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j4"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0152185326474379"
+      rpy="0 0 -3.14159265358676" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="6.5367E-05 -0.006498 -0.018643"
+        rpy="0 0 0" />
+      <mass
+        value="0.013409" />
+      <inertia
+        ixx="1.8848E-06"
+        ixy="1.9676E-09"
+        ixz="6.2104E-11"
+        iyy="1.0811E-06"
+        iyz="-5.7416E-09"
+        izz="1.5926E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j5"
+    type="continuous">
+    <origin
+      xyz="0 0.0481699999999921 0"
+      rpy="0 0 2.96005973279091" />
+    <parent
+      link="Link_4" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="-1.1213E-14 -0.0092571 -0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0017904" />
+      <inertia
+        ixx="7.6257E-08"
+        ixy="-9.0576E-23"
+        ixz="1.4724E-22"
+        iyy="2.3929E-07"
+        iyz="-8.2718E-23"
+        izz="1.8339E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j6"
+    type="fixed">
+    <origin
+      xyz="-0.0100000000000007 -0.0191479139782415 -0.01921853264747"
+      rpy="-2.7445566167947 -1.57079631189374 2.76668621793986" />
+    <parent
+      link="Link_5" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_7">
+    <inertial>
+      <origin
+        xyz="6.5367E-05 -0.006498 -0.0091277"
+        rpy="0 0 0" />
+      <mass
+        value="0.013409" />
+      <inertia
+        ixx="1.8848E-06"
+        ixy="1.9676E-09"
+        ixz="6.2104E-11"
+        iyy="1.0811E-06"
+        iyz="-5.7416E-09"
+        izz="1.5926E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j7"
+    type="continuous">
+    <origin
+      xyz="0 -0.0171488807013023 -0.00999999999999573"
+      rpy="1.57079632679489 1.25060905622965 3.14159265358978" />
+    <parent
+      link="Link_6" />
+    <child
+      link="Link_7" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_8">
+    <inertial>
+      <origin
+        xyz="-1.25212540913466E-05 0.00389083209933203 -0.0156130168697072"
+        rpy="0 0 0" />
+      <mass
+        value="0.00267682688700828" />
+      <inertia
+        ixx="1.84208978467807E-07"
+        ixy="-8.70543376708068E-12"
+        ixz="1.01848920199297E-12"
+        iyy="9.21692370673711E-08"
+        iyz="1.22091448496175E-08"
+        izz="2.70821050277173E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j8"
+    type="fixed">
+    <origin
+      xyz="-0.013 -0.0285849999999988 -0.00970320532043092"
+      rpy="-1.50305467849397 1.57079630572147 1.6385877907605" />
+    <parent
+      link="Link_7" />
+    <child
+      link="Link_8" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_9">
+    <inertial>
+      <origin
+        xyz="6.5367E-05 -0.006498 -0.015425"
+        rpy="0 0 0" />
+      <mass
+        value="0.013409" />
+      <inertia
+        ixx="1.8848E-06"
+        ixy="1.9676E-09"
+        ixz="6.2104E-11"
+        iyy="1.0811E-06"
+        iyz="-5.7416E-09"
+        izz="1.5926E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j9"
+    type="continuous">
+    <origin
+      xyz="0 0.0135849999999879 0"
+      rpy="0 0 -3.02465614480491" />
+    <parent
+      link="Link_8" />
+    <child
+      link="Link_9" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_10">
+    <inertial>
+      <origin
+        xyz="7.9818E-06 0.003901 0.011564"
+        rpy="0 0 0" />
+      <mass
+        value="0.0026768" />
+      <inertia
+        ixx="1.8421E-07"
+        ixy="-8.7054E-12"
+        ixz="1.0185E-12"
+        iyy="9.2169E-08"
+        iyz="1.2209E-08"
+        izz="2.7082E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j10"
+    type="fixed">
+    <origin
+      xyz="2.0503069383393E-05 -0.0345748135223987 -0.0302499999999999"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="Link_9" />
+    <child
+      link="Link_10" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_11">
+    <inertial>
+      <origin
+        xyz="6.5367E-05 -0.006498 0.012325"
+        rpy="0 0 0" />
+      <mass
+        value="0.013409" />
+      <inertia
+        ixx="1.8848E-06"
+        ixy="1.9676E-09"
+        ixz="6.2104E-11"
+        iyy="1.0811E-06"
+        iyz="-5.7416E-09"
+        izz="1.5926E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j11"
+    type="continuous">
+    <origin
+      xyz="2.05030694599706E-05 0.0135951864775987 0"
+      rpy="0 0 -3.0908723844646" />
+    <parent
+      link="Link_10" />
+    <child
+      link="Link_11" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_12">
+    <inertial>
+      <origin
+        xyz="0.0191760696487054 2.70061750740069E-14 -0.0335233420109425"
+        rpy="0 0 0" />
+      <mass
+        value="0.00607002060549479" />
+      <inertia
+        ixx="3.43285197810647E-07"
+        ixy="3.30872245021211E-23"
+        ixz="3.47415857272272E-22"
+        iyy="5.25737564834968E-07"
+        iyz="1.64608941898053E-22"
+        izz="5.90569526462855E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem3/meshes/Link_12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j12"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0074261"
+      rpy="-2.6687 -1.5708 1.0691" />
+    <parent
+      link="Link_11" />
+    <child
+      link="Link_12" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
