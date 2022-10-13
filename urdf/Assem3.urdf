@@ -192,7 +192,7 @@
   </link>
   <joint
     name="j3"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0 0.0274835289074877 -5.17952220170925E-05"
       rpy="-1.57079632679485 -0.796048731037786 -1.57079632679488" />
@@ -202,6 +202,7 @@
       link="Link_3" />
     <axis
       xyz="0 0 1" />
+    <limit lower="-2.25" upper="0.9" effort="10" velocity="3"/>
   </joint>
   <link
     name="Link_4">
@@ -245,7 +246,7 @@
   </link>
   <joint
     name="j4"
-    type="continuous">
+    type="fixed">
     <origin
       xyz="0 0 0.0152185326474379"
       rpy="0 0 -3.14159265358676" />
@@ -298,7 +299,7 @@
   </link>
   <joint
     name="j5"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0 0.0481699999999921 0"
       rpy="0 0 2.96005973279091" />
@@ -308,6 +309,7 @@
       link="Link_5" />
     <axis
       xyz="0 0 1" />
+    <limit lower="-1.34" upper="1.8" effort="10" velocity="3"/>
   </joint>
   <link
     name="Link_6">
@@ -510,7 +512,7 @@
   </link>
   <joint
     name="j9"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0 0.0135849999999879 0"
       rpy="0 0 -3.02465614480491" />
@@ -520,6 +522,7 @@
       link="Link_9" />
     <axis
       xyz="0 0 1" />
+    <limit lower="-1.75" upper="1.6" effort="10" velocity="3"/>
   </joint>
   <link
     name="Link_10">
@@ -616,7 +619,7 @@
   </link>
   <joint
     name="j11"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="2.05030694599706E-05 0.0135951864775987 0"
       rpy="0 0 -3.0908723844646" />
@@ -626,6 +629,7 @@
       link="Link_11" />
     <axis
       xyz="0 0 1" />
+    <limit lower="-1.70" upper="1.6" effort="10" velocity="3"/>
   </joint>
   <link
     name="Link_12">
@@ -669,7 +673,7 @@
   </link>
   <joint
     name="j12"
-    type="continuous">
+    type="fixed">
     <origin
       xyz="0 0 -0.0074261"
       rpy="-2.6687 -1.5708 1.0691" />
